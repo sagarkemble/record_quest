@@ -1,0 +1,28 @@
+
+
+
+.navwrapper3 .logo{
+    font-family:'cyberpunk',sans-serif;
+    margin-left: 2vw;
+    color: rgb(0, 0, 0);
+}
+
+.navwrapper3.nav ul{
+    color: rgb(0, 0, 0);
+}
+.navwrapper3.nav ul li:hover{
+    color: rgb(97, 97, 97);
+}
+
+.mainimg2{
+    position: relative;
+    top: 0;
+    overflow: hidden;
+    max-width: 100vw;
+    max-height: 100vh;
+}
+.mainimg2 img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}

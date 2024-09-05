@@ -1,0 +1,131 @@
+
+@font-face{
+    font-family: valorant;
+    src: url(text/Valorant.ttf);
+}
+
+@font-face{
+    font-family: wukong;
+    src: url(text/Osake.ttf);
+}
+@font-face{
+    font-family: cyberpunk;
+    src: url(text/Cyberpunk-Regular.ttf);
+}
+
+@keyframes colorTransition {
+    0% {
+        color: white;
+    }
+    100% {
+        color: #cccccc; /* Slightly darker shade */
+    }
+}
+
+
+@keyframes textGradient {
+    0% {
+        background-position: right;
+    }
+    100% {
+        background-position: left;
+    }
+}@keyframes textGradient2{
+    0% {
+        background-position: left;
+    }
+    100% {
+        background-position: right;
+    }
+}
+#preloader{
+    background: linear-gradient(45deg,#C33764,#1D2671,#EC6EAD);
+    /* background: linear-gradient(90deg,#C33764,#1D2671,#F7971E,#FFD200); */
+    background-size: 400%;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: aliceblue;
+    font-family: 'poppins',sans-serif;
+    font-size: 2vw;
+    animation: textGradient2 5s ease-in-out infinite alternate;
+}
+#preloader img{
+    height: 20vh;
+}
+#preloader p{
+    font-size: 1em;
+    margin-left: 1vw;
+    /* animation: colorTransition 1s infinite alternate; */
+    background: linear-gradient(90deg,#5433ff,#20bdff,#a5fecb);
+
+    background-size: 400%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: textGradient 1s ease-in-out infinite alternate;
+}
+#preloader.ahidden {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease, visibility 0.5s;
+}
+.navwrapper{
+    margin-top: 20px;
+    font-size: 1rem;
+    display: flex;
+    position: absolute;
+    z-index: 1;
+}
+.logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 10vw;
+    color: rgb(199, 199, 199);
+    color: rgb(224, 224, 224);
+    font-family: 'wukong',sans-serif;
+    font-size: 1em;
+    cursor: pointer;
+    transition: color;
+    transition-duration: 0.3s;
+}
+.logo:hover{
+    color: rgb(182, 182, 182);
+}
+.smalltext{
+    font-size: 1em;
+}
+
+.bigtext{
+    font-size: 2em;
+}
+
+.nav{
+    width: 90vw;
+    display: flex;
+    justify-content: space-evenly;    
+    align-items: center;
+    
+}
+.nav ul{
+    list-style-type: none;
+    color: rgb(224, 224, 224);
+    display: flex;
+    font-family: 'poppins',Times New Roman, Times, serif;
+    font-weight: bold;
+}
+.nav ul li{
+    margin-right: 10vw;
+    cursor: pointer;
+    transition: color;
+    transition-duration: 0.3s;
+}
+.nav ul li:hover{
+    color: rgb(161, 161, 161);
+}
