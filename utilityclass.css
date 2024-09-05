@@ -70,7 +70,7 @@
     color: transparent;
     animation: textGradient 1s ease-in-out infinite alternate;
 }
-#preloader.ahidden {
+#preloader.hidden {
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.5s ease, visibility 0.5s;
