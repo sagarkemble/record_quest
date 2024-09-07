@@ -20,27 +20,83 @@
 
 
 
+/* main image */
 
-
-.mainimg1{
+.mainimgcontainer1{
     position: relative;
     top: 0;
     overflow: hidden;
-    max-width: 100vw;
-    max-height: 100vh;
-}
-.mainimg1 img{
-    width: 100%;
-    height: 100%;
-}
-.backgroundimage{
-    z-index: 0;
-}
-.cutout{
-    /* position: relative; */
-    z-index: 0;
+    /* width: 100vw; */
+    height: 100vh;
 }
 
+.backgroundimg{
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+}
+.cutoutcontainer{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    animation: viewanimationhorizontal 0.5s ease-out;
+}
+.cutout{
+    z-index: 0;
+    height: 100vh;
+    object-fit: cover;
+    /* transition: transform 0.5s ease,filter 0.3s ease-in,animation ease-in 0.5s ; */
+    transition: transform 0.5s ease,animation ease-in 0.5s;
+    filter: drop-shadow(0 0 0px #ffedd8);
+
+}
+
+.blurlayer{
+    z-index: 0;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    transition: background-color 0.2s ease-out;
+    /* transition: filter 0.2s; */
+}
+.hoverarea1{
+    position: absolute;
+    bottom: 0;
+    z-index: 3;
+    margin-left: 4vw;
+    width: 40vw;
+    height:60vh;
+    /* background-color: aliceblue; */
+    transition: transform 0.2s;
+}
+.hoverarea2{
+    position: absolute;
+    top: 10vh;
+    z-index: 3;
+    margin-left: 4vw;
+    width: 20vw;
+    height:30vh;
+    /* background-color: rgb(0, 136, 255); */
+    transition: transform 0.2s;
+}
+.hoverarea1:hover ~ .cutout,.hoverarea2:hover ~ .cutout{
+    /* filter: drop-shadow(0 0 20px #fffbd8); */
+    transform: scale(1.05);
+    z-index: 2;
+    animation: glowanimation 1s ease-out alternate infinite;
+    animation-delay: 0.025s;
+}
+
+.hoverarea1:hover  ~.blurlayer ,.hoverarea2:hover  ~.blurlayer{
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+}
+
+
+
+
+/* content */
 .contentleft{
     gap: 12vh;
     display: flex;
@@ -54,6 +110,8 @@
     z-index: 1;
     align-items: start;
     cursor:default;
+    animation: viewanimationvertical 0.5s ease-out;
+
 }
 .contentleft .bigtext{
     font-size: 4.5em;
@@ -78,6 +136,8 @@
     display: flex;
     flex-direction: column;
     cursor:default;
+    animation: viewanimationvertical 0.5s ease-out;
+
 }
 
 .reviewdescription{
@@ -99,6 +159,8 @@
     right: 4vw;
     color: rgb(224, 224, 224);
     cursor:default;
+    animation: viewanimationvertical 0.5s ease-out;
+
 }
 .logos{
     display: flex;
