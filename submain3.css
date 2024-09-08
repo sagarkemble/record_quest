@@ -33,3 +33,9 @@
     height: 100vh;
     object-fit: cover;
 }
+
+#cyberpunk .arrowcontainer{
+    bottom: -202vh;
+    right: 1vw;
+    color: rgb(0, 0, 0);
+}

@@ -122,10 +122,6 @@
 
 
 
-
-
-
-
 /* navigation bar */
 .navwrapper{
     margin-top: 20px;
@@ -182,4 +178,25 @@
 }
 .nav ul li:hover{
     color: rgb(161, 161, 161);
+}
+
+
+
+/* arrow container */
+.arrowcontainer{
+    overflow: hidden;
+    position: absolute;
+    right: 3vw;
+    color: rgba(182, 182, 182,0.2);
+}
+.arrowdown,.arrowup{
+    font-size: 5vw;
+    bottom: -101vh;
+    transition: color 0.2s ;
+    cursor: pointer;
+}
+
+.arrowdown:hover,.arrowup:hover{
+    color: rgba(182, 182, 182,1);
+
 }

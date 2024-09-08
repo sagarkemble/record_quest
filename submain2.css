@@ -24,3 +24,7 @@
     height: 100vh;
     object-fit: cover;
 }
+#valorant .arrowcontainer{
+    bottom: -102vh;
+    right: 1vw;
+}

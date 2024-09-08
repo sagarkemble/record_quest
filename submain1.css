@@ -181,3 +181,22 @@
 .logos img{
     width: 3em;
 } 
+
+/* #black-myth-wukong .arrowdown{
+    color: rgba(182, 182, 182,0.2);
+    font-size: 5vw;
+    position: absolute;
+    bottom: -1vh;
+    right: 5.2vw;
+    transition: color 0.2s ;
+    cursor: pointer;
+}
+
+
+#black-myth-wukong arrowdown:hover{
+    color: rgba(182, 182, 182,1);
+
+} */
+#black-myth-wukong .arrowcontainer{
+    bottom: -2vh;
+}
